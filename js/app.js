@@ -86,8 +86,6 @@ const displayITBookInformation = (books) => {
 // !Read more https://developers.google.com/books/docs/v1/using
 
 /***
- * 
- * 
  * TODO 
 1) Search by isbn from google books and get price
 2) display more appropiately in the frontend side
