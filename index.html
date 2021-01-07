@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Price Comparison App</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+  <nav>
+    <div class="nav-wrapper  primary-color">
+    <div class="container">
+      <a href="#" class="brand-logo">Book Price Comparison App</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <div id="alert warning"></div>
+
+<!-- Search Form-->
+<form method="GET">
+<div class="wrap">
+  <div class="search">
+     <input type="text" id="search"class="searchTerm" placeholder="Search Books by title or Author">
+     <button type="submit" id="searchButton" class="searchButton">
+       <i class="material-icons">search</i>
+    </button>
+  </div>
+</div>
+</form>
+<!-- End seaerch -->
+
+<!-- Display Books -->
+
+<div class="row">
+  <div class="col s6"><div id="googlebook">
+  </div></div>
+  <div class="col s6"><div id="itbook">
+  </div></div>
+</div>
+
+<!-- End Display Books -->
+
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>
+
+
+
