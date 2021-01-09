@@ -71,7 +71,7 @@ const displayGoogleBookInformation = (data) => {
           book.volumeInfo.title,
           book.volumeInfo.authors[0],
           // book.saleInfo.listPrice.amount,
-          `$${price}`,
+          `$${price.toFixed(2)}`,
           'Source: Google'
         );
       });
