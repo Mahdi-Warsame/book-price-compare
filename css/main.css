@@ -159,7 +159,7 @@ body{
 
 .search {
   width: 100%;
-  position: relative;
+  /* position: relative; */
   display: flex;
 }
 

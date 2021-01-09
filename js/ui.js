@@ -26,7 +26,7 @@ export const displayBooksForGoogle = (image, title, author, price, source) => {
   booksPlaceHolder.innerHTML = HTML;
 };
 
-export const displayBooksForITBooks = (image, title, price, source) => {
+export const displayBooksForITBooks = (image, title, price, author, source) => {
   const booksPlaceHolder = document.querySelector('#itbook');
   console.log('Working ...');
   const HTML = `
@@ -36,6 +36,7 @@ export const displayBooksForITBooks = (image, title, price, source) => {
           <img src='${image}' class='book'>
           <div class='flex-column info'>
             <div class='title'>${title}</div>
+            <div class='author'>${author}</div>
           </div>
           <div class='flex-column group'>
             <div class='members'>
