@@ -35,7 +35,7 @@ searchButton.addEventListener('click', (e) => {
 const proxyurl = 'https://cors-anywhere.herokuapp.com/';
 const fetchBooksITBooks = (url) => {
   // will call Fetch API to request books from the google api
-  fetch(proxyurl + url)
+  fetch(url)
     .then((response) => response.json())
     .then((data) => displayITBookInformation(data));
 };
@@ -117,7 +117,7 @@ const displayITBookInformation = (book) => {
 **/
 
 function scrape(url) {
-  fetch(proxyurl + url)
+  fetch(url)
     .then((response) => response.text())
     .then((data) => domParser(data));
 }
